@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Angular12courseProject';
+  selectedFeature: string= 'recipe'
+
+  onFetureSelected(features: string){
+    this.selectedFeature= features;
+   console.log(features)
+
+  }
 }
